@@ -3,14 +3,21 @@ import MicIcon from "@material-ui/icons/Mic";
 import SearchIcon from "@material-ui/icons/Search";
 import { Button } from "@material-ui/core";
 import { useHistory } from "react-router-dom";
+import { useStateValue } from "../StateProvider";
+import { actionTypes } from "../reducer";
 
-const Search = ({hideButtons = false}) => {
+const Search = ({ hideButtons = false }) => {
+  const [{}, dispatch] = useStateValue();
   const [input, setInput] = useState("");
   const history = useHistory();
   const search = (e) => {
     e.preventDefault();
     console.log("click enter!!");
-    history.push('./search')//when click enter, then go to searchPage
+    history.push("./search"); //when click enter, then go to searchPage
+    dispatch({
+        type: actionTypes.SET_SEARCH_TERM,
+        term: input //把搜尋的字串放進資料庫（contextAPI）
+    })
   };
   return (
     <form className="search">
