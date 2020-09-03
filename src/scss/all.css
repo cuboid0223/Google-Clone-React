@@ -1,0 +1,144 @@
+.home {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100vh;
+}
+
+.home__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 15px 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.home__header a {
+  margin-right: 20px;
+  text-decoration: inherit;
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 13px;
+}
+
+.home__header a:hover {
+  text-decoration: underline;
+}
+
+.home__header__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-width: 13vw;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.home__header__right > .MuiSvgIcon-root {
+  margin-right: 20px;
+  color: gray;
+  cursor: pointer;
+}
+
+.home__body {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 10%;
+}
+
+.home .googleLogo {
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: 100px;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.search__input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 20px;
+  border-radius: 999px;
+  border: 1px solid lightgray;
+  width: 75vw;
+  max-width: 560px;
+  height: 30px;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+.search__input > input {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 10px 20px;
+  border: none;
+  font-size: medium;
+  outline: none;
+}
+
+.search__searchIcon {
+  color: gray;
+  cursor: pointer;
+}
+
+.search__micIcon {
+  color: lightblue;
+  cursor: pointer;
+}
+
+.search__buttons {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.search__buttons > button {
+  margin: 5px;
+  padding: 7px 15px;
+  background-color: #f8f8f8;
+  border: 1px solid white;
+  color: #5f6368;
+  text-transform: capitalize;
+}
+
+.search__buttons > button:hover {
+  background-image: -webkit-linear-gradient(top, #f8f8f8, #f1f1f1);
+  -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
+  background-color: #f8f8f8;
+  color: #222;
+}
+
+.search .search__buttonsHidden {
+  display: none;
+}
+/*# sourceMappingURL=all.css.map */
