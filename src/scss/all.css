@@ -74,6 +74,116 @@
           transform: rotateY(180deg);
 }
 
+.searchPage__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  z-index: 100;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 15px 30px 15px 30px;
+  border-bottom: 1px solid lightgray;
+}
+
+.searchPage__logo {
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: 40px;
+  margin-right: 50px;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.searchPage__headerBody > .search > .search__input {
+  margin-top: 0;
+  width: unset;
+  max-width: unset;
+  margin: unset;
+}
+
+.searchPage__options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: gray;
+  margin-top: 10px;
+}
+
+.searchPage__optionsLeft, .searchPage__optionsRight {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.searchPage__optionsRight {
+  margin-left: 80px;
+}
+
+.searchPage__options a {
+  text-decoration: none;
+  color: gray;
+}
+
+.searchPage__option {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.searchPage__option > a {
+  margin-left: 5px;
+}
+
+.searchPage__results {
+  max-width: 650px;
+  margin-top: 20px;
+  margin-left: 200px;
+  margin-bottom: 100px;
+}
+
+.searchPage__results__count {
+  color: #70757a;
+  font-size: 14px;
+}
+
+.searchPage__result {
+  margin: 40px 0;
+}
+
+.searchPage__resultTitle {
+  text-decoration: none;
+}
+
+.searchPage__resultTitle:hover {
+  text-decoration: underline;
+}
+
+.searchPage__result h2 {
+  font-weight: 500;
+  color: #1A0FAB;
+}
+
+.searchPage__result__images {
+  -o-object-fit: contain;
+     object-fit: contain;
+  height: 20px;
+  width: 20px;
+  margin-right: 10px;
+}
+
 .search__input {
   display: -webkit-box;
   display: -ms-flexbox;
