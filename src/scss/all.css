@@ -271,7 +271,6 @@
 @media (max-width: 568px) {
   .search__input {
     min-width: 300px;
-    margin: 0;
   }
 }
 
