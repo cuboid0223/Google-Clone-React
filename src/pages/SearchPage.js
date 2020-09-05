@@ -14,9 +14,9 @@ import { Link } from "react-router-dom";
 
 const SearchPage = () => {
   const [{ term }, dispatch] = useStateValue();
-  const { data } = useGoogleSearch(term) //<<< live API call
+//   const { data } = useGoogleSearch(term) //<<< live API call
 
-    // const data = Response; //  <<< mock API call
+    const data = Response; //  <<< mock API call
   console.log(data);
 
   return (

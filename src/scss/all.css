@@ -90,6 +90,21 @@
   border-bottom: 1px solid lightgray;
 }
 
+@media (max-width: 568px) {
+  .searchPage__header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    padding: 10px;
+    border: none;
+  }
+}
+
 .searchPage__logo {
   -o-object-fit: contain;
      object-fit: contain;
@@ -99,11 +114,16 @@
           transform: rotateY(180deg);
 }
 
+@media (max-width: 568px) {
+  .searchPage__logo {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
+
 .searchPage__headerBody > .search > .search__input {
   margin-top: 0;
-  width: unset;
   max-width: unset;
-  margin: unset;
 }
 
 .searchPage__options {
@@ -115,6 +135,12 @@
           align-items: center;
   color: gray;
   margin-top: 10px;
+  overflow-y: hidden;
+  overflow-x: scroll;
+}
+
+.searchPage__options::-webkit-scrollbar {
+  display: none;
 }
 
 .searchPage__optionsLeft, .searchPage__optionsRight {
@@ -125,6 +151,12 @@
 
 .searchPage__optionsRight {
   margin-left: 80px;
+}
+
+@media (max-width: 568px) {
+  .searchPage__optionsRight {
+    margin-left: 0;
+  }
 }
 
 .searchPage__options a {
@@ -147,6 +179,12 @@
   margin-left: 5px;
 }
 
+@media (max-width: 568px) {
+  .searchPage__option .MuiSvgIcon-root {
+    display: none;
+  }
+}
+
 .searchPage__results {
   max-width: 650px;
   margin-top: 20px;
@@ -154,13 +192,36 @@
   margin-bottom: 100px;
 }
 
+@media (max-width: 568px) {
+  .searchPage__results {
+    margin: 0px 5px;
+  }
+}
+
 .searchPage__results__count {
   color: #70757a;
   font-size: 14px;
 }
 
+@media (max-width: 568px) {
+  .searchPage__results__count {
+    font-size: 10px;
+  }
+}
+
 .searchPage__result {
   margin: 40px 0;
+}
+
+@media (max-width: 568px) {
+  .searchPage__result {
+    -webkit-box-shadow: 0px 1px 6px #8c8a8c;
+            box-shadow: 0px 1px 6px #8c8a8c;
+    padding: 20px;
+    margin: unset;
+    margin-bottom: 10px;
+    border-radius: 10px;
+  }
 }
 
 .searchPage__resultTitle {
@@ -201,11 +262,17 @@
   margin-top: 40px;
 }
 
+@media (max-width: 568px) {
+  .search__input {
+    min-width: 300px;
+    margin: 0;
+  }
+}
+
 .search__input > input {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  padding: 10px 20px;
   border: none;
   font-size: medium;
   outline: none;
